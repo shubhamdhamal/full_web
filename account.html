@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVPM College </title>
+    <link rel="stylesheet" type="text/css" href="/solid/dist/css/style2.css">
+    </head>
+    <body>
+        <section>
+        <div class="container">
+            <div class="user signinBx">
+                <div class="imgBx">
+                    <img src="log_in.jpg"> 
+                </div>
+                 
+                <div class="formBx">
+                    <form>
+                        <h2>Sign In</h2>
+                        <input type="text"  placeholder="Username">
+                        <input type="password" placeholder="password">
+                        <a href="../solid/profile.html"><input type="button" value="Login"></a>
+                        
+                        <p class="signup">Don't have an account? <a href="#" onclick="toggleForm();">Sign up.</a> </p>
+    
+
+                    </form>
+                 
+                </div>
+
+              
+            </div>
+             
+            <div class="user signupBx">
+                
+                 
+                <div class="formBx">
+                    <form>
+                        <h2>Create an account</h2>
+                        <input type="text" class="box" id="username" name="username" placeholder="Username">
+                        <input type="text" class="box" id="email" name="email" placeholder="Email Address">
+                        <input type="password" class="box" id="password" name="password" placeholder="Create Password">
+                        <input type="password" class="box" id="password" name="password" placeholder="Password">
+                        <input type="submit" id="submit2" value="Sign Up">
+                        <p class="signup">Already have an account? <a href="#" onclick="toggleForm();">Sign in.</a> </p>
+
+                    </form>
+                 
+                </div>
+                <div class="imgBx">
+                    <img src="sign_up.jpg"> 
+                </div>
+              
+            </div>
+    
+        </div>
+
+            
+        </section>
+
+        <script>
+            function toggleForm() 
+            {
+              section = document.querySelector('section');
+              container = document.querySelector('.container');
+              container.classList.toggle('active');
+              section.classList.toggle('active'); 
+            } 
+        </script>    
+
+    </body>
+</html>    
+            
+
